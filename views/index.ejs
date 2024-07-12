@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Vehicle Details</title>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- adjust path as necessary -->
+    <script src="/js/alertSubmit.js"></script>
+</head>
+<body>
+    <h1>Add Vehicle Details</h1>
+    <form action="/api/vehicles" method="POST">
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phoneNumber">Phone Number:</label><br>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+        <label for="vehicleBrand">Vehicle Brand:</label><br>
+        <input type="text" id="vehicleBrand" name="vehicleBrand" required><br><br>
+
+        <label for="chassisNumber">Chassis Number:</label><br>
+        <input type="text" id="chassisNumber" name="chassisNumber" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
